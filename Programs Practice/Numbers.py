@@ -1,10 +1,10 @@
-#Daily Practice
+# WAP to find the Factorial of a given number?
 import math
 num = int(input("enter a number:"))
 x= math.factorial(num)
 print(x)
-===========================================================================
-
+# ===========================================================================
+#  WAP to check the given number is Palindrome or not?
 num = int(input("enter a number:"))
 temp= num
 rev=0
@@ -14,12 +14,13 @@ while num > 0:
     num = num // 10 
     
 if temp == rev :
-     print(f"{temp} is palaindrom")
+    print(f"{temp} is palindrome")
 else:
-    print(f"{temp} is not palaindrom")
+    print(f"{temp} is not palindrome")
     
     
-===============================================================================================
+# ===============================================================================================
+# WAP to check the given number is Prime or not?
 n= int(input("enter a number: "))
 if n<=1:
     print("not prime")
@@ -33,8 +34,9 @@ else:
         
 
 
-======================================================================================================
-	num = int(input("Enter a number: "))
+# ======================================================================================================
+#  WAP to find factorial of numbers?
+num = int(input("Enter a number: "))
 
 if num < 0:
     print("Factorial is not defined for negative numbers.")
@@ -46,8 +48,9 @@ else:
     
     
     
- =====================================================================================================
- n = int(input("Enter the number of terms: "))
+# =====================================================================================================
+# WAP to display Fibonacci series of a numbers?
+n = int(input("Enter the number of terms: "))
 
 t1, t2 = 0, 1
 
@@ -59,41 +62,43 @@ for _ in range(2, n):  # Start from the 3rd term
     
     
     
- ======================================================================================================
- 
- num =  int(input("enter a number: "))
- sum = 0
+# ======================================================================================================
+# WAP to display the sum of numbers?
+num =  int(input("enter a number: "))
+sum = 0
 
- while num > 0:
-     sum = sum + num % 10
+while num > 0:
+    sum = sum + num % 10
     num //= 10
     
- print(f"{sum} total number of sum ")
+print(f"{sum} total number of sum ")
 
-========================================================================================================
+# ========================================================================================================
+#  WAP to Swap two numbers without using 3rd variable?
+num1= int(input("Enter First Number"))
+num2= int(input("Enter Second Number"))
 
-num1= int(input("Enter First Number")
-num2= int(input("Enter Second Number")
-
-print("Before Swaping: ",num1,num2)
+print("Before Swapping: ",num1,num2)
 num1,num2 = num2, num1
-print("After Swaping: ", num1,num2)
+print("After Swapping: ", num1,num2)
 
 
-=================================================================================================
+# =================================================================================================
+#  WAP to display the total of marks.
 name= input("enter a name")
 sub1= int(input("science marks:"))
 sub2= int(input("maths marks:"))
 total= sub1 + sub2
 print("total marks" , total)
 
-
+# WAP to find the distance between two numbers.
 dist1= int(input("distance 1:"))
 dist2= int(input("distance 2:"))
 sub= dist1 - dist2
 print("dist between ", sub)
 
-==============================================================================================================================
+# ==============================================================================================================================
+# WAP to display the reversed order of the numbers?
 num= 12345
 
 b= list(str(num))
@@ -101,7 +106,8 @@ b.reverse()
 result = int("".join(map(str, b)))
 print(result)
 
-==============================================================================================================================
+# =====================================================================================================================
+# WAP to check the given number is Even or Odd?
 num = int(input("Enter a Number: "))
 
 if (num % 2) == 0:
@@ -111,12 +117,13 @@ else:
 
 
 
-===================================================================================================================
+# ===================================================================================================================
+# WAP to check the given number is Armstrong or not?
 num= int(input("Enter a Number:"))
 temp=num
 a=0
 if num >=1 and num <= 9:
-    print(f"{num} is a Amstrong ")
+    print(f"{num} is a Armstrong ")
 else:
     for i in range(2,num+1):
         rem= num % 10
@@ -124,6 +131,8 @@ else:
         num = num // 10
         
     if temp==a:
-        print(f"{temp} is a Amstrong")
+        print(f"{temp} is a Armstrong")
     else:
-        print(f"{temp} is not a Amstrong")
+        print(f"{temp} is not a Armstrong")
+
+# =========================================================================================================================
