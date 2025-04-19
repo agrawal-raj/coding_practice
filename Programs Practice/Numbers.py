@@ -136,3 +136,35 @@ else:
         print(f"{temp} is not a Armstrong")
 
 # =========================================================================================================================
+# Write program weather the number is PERFECT NUMBER or not?
+num = int(input("Enter a number:"))\
+
+sum = 0
+for i in rane(1, num):
+    if num % i == 0:
+        sum += 1
+
+if sum == num:
+    print(f"{num} is a perfect number")
+else:
+    print(f"{num} is not a perfect number")
+        
+# =======================================================================================================================
+# Write a program to display MULTIPLICATION table?
+
+num = int(input("Enter a number:"))
+
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
+
+# =====================================================================================================================
+# Write a program to display MULTIPLICATION TABLES?
+
+for i in range(1, 11):
+    for j in range(1, 11):
+        print(f"{i} x {j} = {i * j:2}", end="\t")
+    print()
+
+# =========================================================================================================================
+
+
