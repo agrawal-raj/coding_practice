@@ -73,6 +73,15 @@ while num > 0:
     
 print(f"{sum} total number of sum ")
 
+#Second way to solve this problem 
+n = input("Enter a number: ")
+total = 0
+
+for digit in n:
+    total += int(digit)
+    
+print(total)
+
 # ========================================================================================================
 #  WAP to Swap two numbers without using 3rd variable?
 num1= int(input("Enter First Number"))
@@ -137,12 +146,12 @@ else:
 
 # =========================================================================================================================
 # Write program weather the number is PERFECT NUMBER or not?
-num = int(input("Enter a number:"))\
+num = int(input("Enter a number:"))
 
 sum = 0
-for i in rane(1, num):
+for i in range(1, num):
     if num % i == 0:
-        sum += 1
+        sum += i
 
 if sum == num:
     print(f"{num} is a perfect number")
@@ -166,5 +175,27 @@ for i in range(1, 11):
     print()
 
 # =========================================================================================================================
+# WAP to check the number is palindrome or not.
+def palindrome(s):
+    return s == s[::-1]
 
+
+user_input= input("Enter a number:")
+
+if palindrome(user_input):
+    print("It is a palindrome")
+else:
+    print("It is not a palindrome")
+#This is second way to solve this problem using lambda function
+
+
+palindrome = lambda s : s == s[::-1] 
+user_input= input("Enter a number:")
+
+if palindrome(user_input):
+    print("It is a palindrome")
+else:
+    print("It is not a palindrome")
+
+#==============================================================================
 
